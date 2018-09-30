@@ -1,0 +1,176 @@
+\documentclass[twoside,maketable]{cauthesis}
+%%  oneside     用于单面打印（默认值）     
+%%  twoside     用于双面打印，在标题页后会生成空白页，清除双数页。注：正规的课程论文应使用单面打印
+%%  maketable   在摘要后打印目录
+    \addbibresource{./bibsource.bib}%添加bib文件
+    \title{中国农业大学课程论文\LaTeX{}模板}%输入标题
+    \date{}%用于清除标题下的时间
+    \author{}%用于清除标题下作者
+    \tpitem{%请使用英文分号隔开，请严格按照格式填写
+        论文题目;2;%输入2生成2行空白下划线
+        课程名称;1;%输入1生成1行空白下划线
+        任课老师;0;老师;%输入0并输入第三项自动填写内容
+        班级;0;班级;
+        学号;0;0123456789012;
+        姓名;0;姓名;
+        测试信息;0;测试过长信息会自动换行;%信息过长会自动换行
+    }%无法输入过多信息，会引起错误，如有需求，可以手动修改cauthesis.slc中标记%1%处（修改信息与上方文字空白距离）或%2%处（信息行间距）
+    \schoolyear{2018-2019}%输入学年信息，注释此命令为“20  -20  ”
+    \semester{秋}%输入学期信息，注释此命令为“  ”
+    \zhabstruct{
+        这是使用\LaTeX{}编写的中国农业大学课程论文模板，参照中国农业大学课程论文格式编写（吐槽下，教务处的文件打不开），制作了可自定义的封面
+        添加了Bib\LaTeX{}宏包作为文献引用，同时添加了许多常用宏包。
+
+        编写过程主要参考胡振震编写的模板\cite{Huzhenzhen2018}。
+    }%填写中文摘要
+    \zhkeywords{\LaTeX{};中国农业大学;课程论文模板}%填写中文关键词，使用英文分号隔开
+    \enabstruct{
+        This the China Agricultural University Course Thesis \LaTeX{} Template.
+        This template is made according to China Agricultural University course thesis writing format.
+        Customizable title page is available.
+        Bib\LaTeX{} marco is used to produce bibliography.
+
+        The template made by HU Zhenzhen is used as the main reference in the process\cite{Huzhenzhen2018}.
+    }%填写英文摘要，删除此命令可取消显示英文摘要和英文关键词
+    \enkeywords{\LaTeX{};China Agricultural University;Thesis template}%填写英文关键词，使用英文分号隔开
+\begin{document}
+    \section{引言}
+    \LaTeX{}是应该是世界上目前最专业的论文写作软件，有很完备的系统，以及数千的宏包支持，许多顶级期刊只接收\TeX{}格式的投稿，很多大学都有官方的\LaTeX{}模板。
+    在中国\LaTeX{}的使用并不算普遍，为了方便之后课程论文的写作，同时推广\LaTeX{}的使用，编写了此模板。
+    此模板可以解决课程论文的写作，并对一些复杂功能提供简便的使用。
+    \section{声明}
+    本模板根据中国农业大学课程论文格式制作，供中国农业大学学生使用。
+
+    本模板是以article为基类，并加载ctex中文环境和xeCJKfntef中文字体。
+    使用与article.cls基本相同，但必须保存为UTF8编码，建议使用\XeLaTeX{}+biber进行编译，建议的编译链为\XeLaTeX{}->biber->\XeLaTeX{}*2。
+
+    模板加载了多种常用宏包，部分为实现模板所必须，其余可自行根据需要关闭或添加。
+
+    模板发行包包括以下文件：
+
+    \begin{table}[H]
+        \begin{tabular}{ll}
+            cauthesis.cls&模板主文件（必须）\\
+            CAU-Course-Thesis-Template.tex&本文件源文件\\
+            CAU-Course-Thesis-Template.pdf&本文件\\
+            bibsource.bib&参考内容\\
+            gb7714-2015.bbx&参考文献模板\\
+            Logo.jpg&校徽\\
+            中国农业大学课程论文写作格式.doc&编写模板的依据
+        \end{tabular}
+    \end{table}
+    
+    模板的最新版本可以再\url{https://github.com/Cdmium/CAUTemplate}。
+    有关模板的任何内容，如Bug提交、功能建议等均可通过GitHub或邮箱\url{yanyuxuan@cau.edu.cn}联系作者。
+
+    本模板是LPPL协议下的项目，全文可在\url{https://www.latex-project.org/lppl.txt}查看。
+
+    重要声明：
+    \begin{level}{1}
+        \item 任何个人和团体可以无限制的自由使用和更改此模板
+        \item 本模板为非官方模板，模板作者对使用该模板所引起的后果不负任何责任
+    \end{level}
+
+    \section{使用}
+    为了增加模板文件的兼容性，没有添加listing宏包，在本文中添加代码和说明，使用时请参照源文件使用。
+    更多功能和方法请参考lshort、The TeX Book及宏包手册。
+
+    \subsection{插入图片}
+    图\ref{fig:1}%引用
+    \begin{figure}[H]
+        \centering
+        \includegraphics{./Picture/Logo.jpg}
+        \figcaption{演示插入图片}%建议使用定义好的\figcaption{}可以避免出现错误
+        \label{fig:1}%引用标记
+    \end{figure}
+
+    \subsection{插入表格}
+    表\ref{tab:1}%引用
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{lc}
+            \hline
+            Atom&Radius(nm)\\
+            \hline
+            Hydrogen&0.12\\
+            Oxygen&0.14\\
+            Nitrogen&0.15\\
+            Carbon&0.17\\
+            Sulfur&0.18\\
+            Phosphorus&0.19\\
+            \hline
+        \end{tabular}
+        \tabcaption{演示插入表格}%建议使用定义好的\tabcaption{}可以避免出现错误
+        \label{tab:1}%引用标记
+    \end{table}
+
+    \subsection{参考文献}
+    \cite{王夫之1845--}\cite{KENNEDY1975-339-360}%使用\cite{}引用bib文件中的内容
+    \nocite{汪昂1881--}%使用\nocite{}引用但不会在文中显示[1]，最后参考文献会显示
+    %可以使用\nocite{*}一次引用所有内容
+
+    \subsection{层次使用}
+    定义了具有两个层次的带序号的罗列环境，基于enumerate环境，
+    \begin{level}{1}
+        \item 层次一标题
+        \begin{level}{2}
+            \item 层次二标题
+            \item \ldots
+        \end{level}
+        \item \ldots
+    \end{level}
+    
+    \section{宏包列表}
+    \begin{table}[htbp]
+        \centering
+        \begin{supertabular}{lll}
+            \hline
+            宏包名称&功能&状态\\
+            \hline
+            geometry&控制页面布局&必须\\
+            graghicx&插入图片&必须\\
+            placeins&控制浮动体浮动范围&可选默认开启\\
+            etoolbox&编程辅助&必须\\
+            ifthen&编程辅助&必须\\
+            ulem&多种字体修饰&必须\\
+            array&表格拓展&必须\\
+            hyperref&超链接&必须\\
+            titleref&章节标题超链接&必须\\
+            fontspec&英文字体&必须\\
+            ctex&中文环境&必须\\
+            xeCJKfntef&中文字体&必须\\
+            titlesec&章节标题格式&必须\\
+            bbding&特殊字体&可选默认开启\\
+            pifont&特殊字体&可选默认开启\\
+            xltxtra&特殊文本&可选默认开启\\
+            mfloho&特殊文本&可选默认开启\\
+            texames&特殊文本&可选默认开启\\
+            amsmath&数学&可选默认开启\\
+            amssymb&数学&可选默认开启\\
+            mathrsfs&数学字体&可选默认开启\\
+            xcolor&颜色控制&必须\\
+            pgf&绘图&必须\\
+            tikz&绘图&必须\\
+            pgfplots&统计图&可选默认关闭\\
+            pgftable&统计图表格&可选默认关闭\\
+            float&浮动体&必须\\
+            multirow&表格合并行&可选默认开启\\
+            booktabs&表格加强&可选默认开启\\
+            longtable&长表格&可选默认关闭\\
+            supertabular&跨页表格&可选默认开启\\
+            tabularx&表格加强&必须\\
+            subfigure&子图片&可选默认开启\\
+            ccpation&说明文字加强&必须\\
+            url&网址&必须\\
+            biblatex&参考文献&必须\\
+            enumitem&罗列加强&必须\\
+            \hline
+        \end{supertabular}
+    \end{table}
+
+    \subsubsection{测试三级标题}
+
+    \specialsection{致谢}%使用\specialsection{}生成没有编号但编入目录的章节。
+    %请勿在此section下添加subsection或subsubsection会产生标号紊乱。
+    \printbibliography%打印引用文献
+\end{document}
