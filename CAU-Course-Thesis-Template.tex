@@ -39,7 +39,9 @@
     在中国\LaTeX{}的使用并不算普遍，为了方便之后课程论文的写作，同时推广\LaTeX{}的使用，编写了此模板。
     此模板可以解决课程论文的写作，并对一些复杂功能提供简便的使用。
     \section{声明}
-    本模板根据中国农业大学课程论文格式制作，供中国农业大学学生使用。
+    本模板根据中国农业大学课程论文格式制作，设计供中国农业大学学生使用。
+
+    当前版本为2018/10/24 v1.1
 
     本模板是以article为基类，并加载ctex中文环境和xeCJKfntef中文字体。
     使用与article.cls基本相同，但必须保存为UTF8编码，建议使用\XeLaTeX{}+biber进行编译，建议的编译链为\XeLaTeX{}->biber->\XeLaTeX{}*2。
@@ -121,8 +123,7 @@
     \end{level}
     
     \section{宏包列表}
-    \begin{table}[htbp]
-        \centering
+    \begin{center}
         \begin{supertabular}{lll}
             \hline
             宏包名称&功能&状态\\
@@ -134,25 +135,30 @@
             ifthen&编程辅助&必须\\
             ulem&多种字体修饰&必须\\
             array&表格拓展&必须\\
+            \hline
             hyperref&超链接&必须\\
             titleref&章节标题超链接&必须\\
             fontspec&英文字体&必须\\
             ctex&中文环境&必须\\
             xeCJKfntef&中文字体&必须\\
             titlesec&章节标题格式&必须\\
+            \hline
             bbding&特殊字体&可选默认开启\\
             pifont&特殊字体&可选默认开启\\
             xltxtra&特殊文本&可选默认开启\\
             mfloho&特殊文本&可选默认开启\\
             texames&特殊文本&可选默认开启\\
+            \hline
             amsmath&数学&可选默认开启\\
             amssymb&数学&可选默认开启\\
             mathrsfs&数学字体&可选默认开启\\
+            \hline
             xcolor&颜色控制&必须\\
             pgf&绘图&必须\\
             tikz&绘图&必须\\
             pgfplots&统计图&可选默认关闭\\
             pgftable&统计图表格&可选默认关闭\\
+            \hline
             float&浮动体&必须\\
             multirow&表格合并行&可选默认开启\\
             booktabs&表格加强&可选默认开启\\
@@ -160,14 +166,17 @@
             supertabular&跨页表格&可选默认开启\\
             tabularx&表格加强&必须\\
             subfigure&子图片&可选默认开启\\
+            \hline
             ccpation&说明文字加强&必须\\
             url&网址&必须\\
             biblatex&参考文献&必须\\
             enumitem&罗列加强&必须\\
             \hline
         \end{supertabular}
-    \end{table}
-
+    \end{center}
+    
+    \section{测试一级标题}
+    \subsection{测试二级标题}
     \subsubsection{测试三级标题}
 
     \specialsection{致谢}%使用\specialsection{}生成没有编号但编入目录的章节。
