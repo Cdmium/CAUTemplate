@@ -38,7 +38,7 @@
 %%
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{cauthesis}%
-    [2018/09/30 v1.0 China Agricultural University Course Thesis LaTeX Template]
+    [2018/10/24 v1.1 China Agricultural University Course Thesis LaTeX Template]
 \newif\if@oneside\@onesidefalse
 \newif\if@twoside\@twosidefalse
 \newif\if@clearaftp\@clearaftpfalse
