@@ -24,7 +24,7 @@
 %% Class Name   : cauthesis
 %% Description  : China Agricultural University Course Thesis LaTeX Template
 %% Repository   : https://github.com/Cdmium/CAUTemplate
-%% Version      : 1.0
+%% Version      : 1.1
 %% Copyright    : 2018 阎彧萱
 %% E-mail       : yanyuxuan@cau.edu.cn
 %% License      : LaTeX Project Public License v1.3c or later
