@@ -1,5 +1,6 @@
 # CAUTemplate
 China Agricultural University Course Thesis LaTeX Template
+中国农业大学课程论文模板
 ## 功能
  - 自动生成中国农业大学课程论文封面
  - 自动填入封面信息或生成指定空白行
