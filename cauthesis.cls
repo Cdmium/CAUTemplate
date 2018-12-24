@@ -24,7 +24,7 @@
 %% Class Name   : cauthesis
 %% Description  : China Agricultural University Course Thesis LaTeX Template
 %% Repository   : https://github.com/Cdmium/CAUTemplate
-%% Version      : 1.1
+%% Version      : 1.2
 %% Copyright    : 2018 阎彧萱
 %% E-mail       : yanyuxuan@cau.edu.cn
 %% License      : LaTeX Project Public License v1.3c or later
@@ -38,7 +38,7 @@
 %%
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{cauthesis}%
-    [2018/10/24 v1.1 China Agricultural University Course Thesis LaTeX Template]
+    [2018/12/24 v1.2 China Agricultural University Course Thesis LaTeX Template]
 \newif\if@oneside\@onesidefalse
 \newif\if@twoside\@twosidefalse
 \newif\if@clearaftp\@clearaftpfalse
