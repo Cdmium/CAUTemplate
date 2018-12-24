@@ -72,7 +72,7 @@
 %% ---------------------------------------------------------------------------
 %页面布局调节
 \RequirePackage{geometry}
-\geometry{left=2.5cm,right=2.5cm,top=3.5cm,bottom=2.5cm,footskip=0.5cm}
+\geometry{left=2.5cm,right=2.5cm,top=3.5cm,bottom=2.5cm,footskip=0.8cm}
 \pagestyle{plain}
 \linespread{1.25}\selectfont
 %% ---------------------------------------------------------------------------
@@ -344,6 +344,7 @@ style=gb7714-2015]{biblatex}%biber
     \fi%
     \clearpage%
     \setcounter{page}{1}%
+    \pagestyle{plain}
     \pagenumbering{arabic}%
 }
 %% ---------------------------------------------------------------------------
