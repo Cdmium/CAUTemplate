@@ -105,22 +105,16 @@
 	%% ---------------------------------------------------------------------------
 	%英文字体控制
 	\RequirePackage{fontspec}
-	\setmainfont{Times New Roman}
+	\setmainfont{Noto Serif}
 	%% ---------------------------------------------------------------------------
 	%中文环境
 	%中文字体控制
 	\RequirePackage[zihao=-4]{ctex}
 	\RequirePackage{xeCJKfntef}
-	\setCJKmainfont[BoldFont={Adobe Heiti Std},ItalicFont={Adobe Kaiti Std}]{Adobe Song Std}
-	\setCJKsansfont{Adobe Heiti Std}
-	\setCJKmonofont{Adobe Fangsong Std}
-	\setCJKfamilyfont{zhsong}{Adobe Song Std}
-	\setCJKfamilyfont{zhhei}{Adobe Heiti Std}
-	\setCJKfamilyfont{zhkai}{Adobe Kaiti Std}
-	\setCJKfamilyfont{zhfs}{Adobe Fangsong Std}
+	\setCJKmainfont[BoldFont={Noto Sans CJK SC},ItalicFont={方正仿宋}]{Noto Serif CJK SC}
+	\setCJKsansfont{Noto Sans Serif CJK SC}
+	\setCJKmonofont{方正仿宋}
 	\setCJKfamilyfont{zhli}{方正隶书简体}
-	\setCJKfamilyfont{zhyou}{YouYuan}
-	\setCJKfamilyfont{zhsongbf}[FakeBold=4]{Adobe Song Std}
 	%% ---------------------------------------------------------------------------
 	%章节标题格式
 	\RequirePackage{titlesec}
