@@ -115,6 +115,7 @@
 	\setCJKsansfont{Noto Sans Serif CJK SC}
 	\setCJKmonofont{方正仿宋}
 	\setCJKfamilyfont{zhli}{方正隶书简体}
+	\setCJKfamilyfont{zhboldsong}{NotoSerifCJK-Bold.ttc}
 	%% ---------------------------------------------------------------------------
 	%章节标题格式
 	\RequirePackage{titlesec}
@@ -253,7 +254,7 @@
 					\end{center}%
 					\vspace{66pt}%1%
 					\zihao{-2}%
-					\CJKfamily{zhsongbf}%
+					\CJKfamily{zhboldsong}%
 					\defcounter{cycling}{0}%
 					\renewcommand*{\do}[1]{%
 						\stepcounter{cycling}%
@@ -280,7 +281,7 @@
 					\linespread{1.5}\selectfont%
 					\begin{tabular}[t]{|p{2.1cm}<{\centering}|}%
 						\hline%
-						\zihao{-4}\CJKfamily{zhsongbf} 成绩 \\%
+						\zihao{-4}\CJKfamily{zhboldsong} 成绩 \\%
 						\hline%
 						\zihao{-4}                          \\\hline%
 					\end{tabular}%
